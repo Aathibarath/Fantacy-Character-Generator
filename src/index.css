@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .font-fantasy-title {
+    font-family: 'Cinzel Decorative', 'Cinzel', serif;
+  }
+  .font-fantasy-name {
+    font-family: 'Cinzel Decorative', 'MedievalSharp', 'Metamorphous', Georgia, serif;
+  }
+  .font-alchemy-serif {
+    font-family: 'Cinzel', Georgia, serif;
+  }
+  .font-parchment {
+    font-family: 'Cormorant Garamond', 'MedievalSharp', Georgia, serif;
+  }
+}
+
+/* Ancient wood and parchment texture overlays */
+.workbench-bg {
+  background-color: #0c0806;
+  background-image: 
+    radial-gradient(ellipse at 50% 15%, rgba(180, 83, 9, 0.15) 0%, transparent 60%),
+    radial-gradient(circle at 10% 80%, rgba(13, 148, 136, 0.08) 0%, transparent 40%),
+    radial-gradient(circle at 90% 85%, rgba(217, 119, 6, 0.1) 0%, transparent 45%),
+    repeating-linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.015) 0px,
+      rgba(255, 255, 255, 0.015) 1px,
+      transparent 1px,
+      transparent 4px
+    ),
+    linear-gradient(180deg, #130c08 0%, #0c0806 50%, #080504 100%);
+}
+
+.tome-card {
+  background: 
+    linear-gradient(135deg, rgba(38, 26, 18, 0.95) 0%, rgba(22, 15, 10, 0.98) 100%);
+  box-shadow: 
+    0 25px 50px -12px rgba(0, 0, 0, 0.85),
+    0 0 0 1px rgba(180, 83, 9, 0.3),
+    inset 0 1px 0 rgba(245, 158, 11, 0.2),
+    inset 0 0 40px rgba(0, 0, 0, 0.6);
+}
+
+.player-card {
+  background: 
+    linear-gradient(165deg, rgba(42, 28, 19, 0.98) 0%, rgba(26, 18, 12, 0.99) 45%, rgba(15, 10, 7, 1) 100%);
+  box-shadow: 
+    0 25px 60px -15px rgba(0, 0, 0, 0.95),
+    0 0 0 2px rgba(217, 119, 6, 0.6),
+    inset 0 0 0 1px rgba(245, 158, 11, 0.35),
+    inset 0 0 45px rgba(0, 0, 0, 0.7);
+}
+
+.portrait-frame {
+  box-shadow:
+    0 10px 25px -5px rgba(0, 0, 0, 0.9),
+    0 0 15px rgba(217, 119, 6, 0.2),
+    inset 0 0 15px rgba(0, 0, 0, 0.8);
+}
+
